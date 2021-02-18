@@ -42,6 +42,9 @@ int main()
                 else
                     printf("error: zero divisor\n");
                 break;
+            case '%':
+                push((int)pop() % (int)pop());
+                break;
             case '\n':
                 printf("\t%.8g\n", pop());
                 break;
